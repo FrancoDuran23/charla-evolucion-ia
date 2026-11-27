@@ -415,6 +415,9 @@
 .sR .it{font-size:30px;padding:16px 0}
 .sR .cols{top:230px}
 .sR .punch{position:absolute;left:56px;right:56px;bottom:56px;font:400 56px/1 var(--font-condensed);text-transform:uppercase}
+.s11 .a .xpl{margin-top:22px;font-size:24px;color:var(--ink-muted)}
+.s11 .a .xpl b{color:var(--ink)}
+.s08 .node p:not(.qm){white-space:normal!important;font-size:20px!important;line-height:1.15}
 </style></head><body>
 <div class="stage">
 
@@ -481,10 +484,10 @@
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">La evolución · 2/3</div>
  <div class="head"><div class="bar"></div><h2 class="display">Y después llegó <span class="hl">la IA</span></h2><div class="lead muted">Hace 7 meses, en el laburo, compartíamos pantalla…</div></div>
  <div class="tl"><div class="line"></div>
-  <div class="node step" data-step="1"><div class="dot">1</div><p>Chat + copiar/pegar</p></div>
-  <div class="node step" data-step="2"><div class="dot">2</div><p>CLI</p></div>
-  <div class="node step" data-step="3"><div class="dot">3</div><p>Prompts larguísimos</p></div>
-  <div class="node step" data-step="4"><div class="dot">4</div><p>Skills / AGENTS.md</p></div>
+  <div class="node step" data-step="1"><div class="dot">1</div><p>Le preguntás a un chat y copiás</p></div>
+  <div class="node step" data-step="2"><div class="dot">2</div><p>La IA entra a tu compu</p></div>
+  <div class="node step" data-step="3"><div class="dot">3</div><p>Le escribís instrucciones eternas</p></div>
+  <div class="node step" data-step="4"><div class="dot">4</div><p>Le dejás un manual para que trabaje solo</p></div>
   <div class="node me q step" data-step="5"><div class="dot">5</div><p class="qm">?</p></div>
  </div>
  <figure class="media shot pop" data-step="1" style="z-index:11"><img src="assets/capturas/06-1-chat-copiar-pegar.png" alt="Ilustración: chat con IA y botón Copiar"></figure>
@@ -526,7 +529,7 @@
 <!-- MODELO VS AGENTE -->
 <section class="slide s12 ag" data-title="Un modelo no es un agente">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 1/3</div>
- <div class="head"><div class="bar"></div><h2 class="display">Un modelo <span class="hl">no es</span> un agente</h2><div class="lead muted">Un modelo responde una vez. Un agente actúa, observa y vuelve a empezar.</div></div>
+ <div class="head"><div class="bar"></div><h2 class="display">Un modelo <span class="hl">no es</span> un agente</h2><div class="lead muted">Un modelo te responde. Un agente hace el trabajo.</div></div>
  <div class="colh step" data-step="1" style="left:96px;top:262px">Modelo</div>
  <div class="colh step" data-step="2" style="left:600px;top:262px">Agente</div>
  <div class="divider"></div>
@@ -539,13 +542,13 @@
  </svg>
  <div class="nbox  step" data-step="1" style="left:96px;top:296px;width:280px;height:80px"><div>Prompt</div></div>
  <div class="nbox k step" data-step="1" style="left:96px;top:426px;width:280px;height:80px"><div>Una respuesta<small>y listo</small></div></div>
- <div class="nbox  step" data-step="2" style="left:600px;top:296px;width:220px;height:80px"><div>Percibe</div></div>
+ <div class="nbox  step" data-step="2" style="left:600px;top:296px;width:220px;height:80px"><div>Mira</div></div>
  <div class="nbox  step" data-step="2" style="left:890px;top:296px;width:220px;height:80px"><div>Decide</div></div>
- <div class="nbox k step" data-step="2" style="left:890px;top:454px;width:220px;height:80px"><div>Actúa<small>usa herramientas</small></div></div>
- <div class="nbox v step" data-step="2" style="left:600px;top:454px;width:220px;height:80px"><div>Observa<small>y vuelve a empezar</small></div></div>
+ <div class="nbox k step" data-step="2" style="left:890px;top:454px;width:220px;height:80px"><div>Hace<small>usa herramientas</small></div></div>
+ <div class="nbox v step" data-step="2" style="left:600px;top:454px;width:220px;height:80px"><div>Revisa<small>y vuelve a empezar</small></div></div>
  <div class="step" data-step="2" style="position:absolute;inset:0;z-index:5;pointer-events:none"><i class="fdot" style="offset-path:path('M710 336 L1000 336 L1000 494 L710 494 L710 336');--t:4s;animation-name:jd-loop"></i></div>
- <div class="punch step" data-step="3">Modelo = motor. <span class="hl">Agente = modelo + herramientas + contexto + loop.</span></div>
- <aside class="notes"><p>Hablemos un poco de modelos, harness y orquestación.</p><p>Primera distinción, la más importante: un modelo no es un agente.</p><p>Un modelo recibe un prompt y produce una respuesta. Y listo.</p><p>Un agente agrega un loop: tiene un objetivo, lee el contexto, usa herramientas, ejecuta acciones, observa qué pasó… y con eso decide qué hacer después.</p><p>Modelo = motor de inferencia. Agente = motor + herramientas + contexto + loop de acción.</p></aside>
+ <div class="punch step" data-step="3">El modelo <span class="hl">piensa</span>. El agente <span class="hl">hace</span>.</div>
+ <aside class="notes"><p>Hablemos un poco de modelos, harness y orquestación.</p><p>Primera distinción, la más importante: un modelo no es un agente.</p><p>Un modelo recibe un prompt y produce una respuesta. Y listo.</p><p>Un agente hace el trabajo: mira, decide, hace y revisa, y vuelve a empezar hasta terminar.</p><p>El modelo piensa. El agente hace.</p></aside>
 </section>
 
 <!-- HARNESS -->
@@ -553,10 +556,10 @@
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Agentes · 2/3</div>
  <div class="left"><div class="bar"></div>
   <div class="big">El modelo es <span class="hl">el cerebro</span>.</div>
-  <div class="big step" data-step="6">El <span class="hl">harness</span> es el sistema que lo pone a trabajar.</div>
+  <div class="big step" data-step="5">El <span class="hl">harness</span> es todo lo que le das para que trabaje.</div>
  </div>
- <div class="stack"><div><i></i>Modelo<span>el cerebro</span></div><div class="step" data-step="1"><i>+</i>Herramientas<span>qué puede usar</span></div><div class="step" data-step="2"><i>+</i>Contexto<span>qué recibe</span></div><div class="step" data-step="3"><i>+</i>Permisos<span>qué puede tocar</span></div><div class="step" data-step="4"><i>+</i>Loop<span>cómo sigue</span></div><div class="step" data-step="5"><i>+</i>Estado<span>qué recuerda</span></div><div class="tot step" data-step="6"><i>=</i>Harness<span>el entorno donde la inferencia se vuelve trabajo</span></div></div>
- <aside class="notes"><p>Ahora una palabra que van a escuchar cada vez más: harness.</p><p>El modelo hace la inferencia: es el cerebro. El harness construye el entorno donde esa inferencia se convierte en trabajo: qué herramientas puede usar, qué contexto recibe, qué permisos tiene, cómo continúa el loop, qué estado mantiene, qué pasa cuando falla.</p></aside>
+ <div class="stack"><div><i></i>Modelo<span>el cerebro</span></div><div class="step" data-step="1"><i>+</i>Herramientas<span>sus manos</span></div><div class="step" data-step="2"><i>+</i>Contexto<span>lo que sabe</span></div><div class="step" data-step="3"><i>+</i>Permisos<span>lo que puede tocar</span></div><div class="step" data-step="4"><i>+</i>Memoria<span>lo que recuerda</span></div><div class="tot step" data-step="5"><i>=</i>Harness<span>todo lo que le das para que trabaje</span></div></div>
+ <aside class="notes"><p>Ahora una palabra que van a escuchar cada vez más: harness.</p><p>El modelo es el cerebro. El harness es todo lo que le das para que trabaje: herramientas (sus manos), contexto (lo que sabe), permisos (lo que puede tocar) y memoria (lo que recuerda).</p></aside>
 </section>
 
 <!-- ORQUESTAR -->
@@ -589,7 +592,7 @@
 <section class="slide s11" data-title="¿Quién usa un IDE?">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
  <div class="q"><div class="bar"></div><h2 class="display">¿Quién de ustedes<br>usa un <span class="hl">IDE</span>?</h2></div>
- <div class="a step" data-step="1"><div class="lead">Bueno… yo uso un</div><div class="big">ADE: <span class="hl">Orca</span></div></div>
+ <div class="a step" data-step="1"><div class="lead">Bueno… yo uso un</div><div class="big">ADE: <span class="hl">Orca</span></div><div class="lead xpl">El IDE es donde escribís código.<br>El ADE es donde <b>dirigís agentes</b>.</div></div>
  <div class="tools step" data-step="1"><div class="tl orca"><img src="assets/logos/orca.png" alt="Orca"><span><b>Orca</b><small>onorca.dev</small></span></div><div class="tl"><img src="assets/logos/herdr.png" alt="herdr"><span><b>herdr</b><small>herdr.dev</small></span></div></div>
  <aside class="notes"><p>¿Quién de ustedes usa un IDE? (manos) Bueno… yo uso un ADE: Orca, un entorno para trabajar con un equipo de agentes.</p><p>La cara de mis compañeros cuando saqué el ADE… me moría de vergüenza. Ese día hablaron muy mal de la gente que usa IA. Sentí que vivía en un mundo de mentira, aunque era quien más PRs hacía y quien más tickets creaba y resolvía.</p></aside>
 </section>
