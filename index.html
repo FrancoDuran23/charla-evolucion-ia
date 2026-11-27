@@ -193,7 +193,7 @@
 .tren h2{font-size:96px;line-height:.9;margin-top:14px}
 .tren h2 .hl{color:#ffb35c}
 .tren .sub{margin-top:20px;font:600 26px/1.3 var(--font-sans)}
-.tren .bleed img{object-position:50% 48%}
+.tren .bleed img{object-position:50% 62%}
 .tren .stats{position:absolute;left:56px;bottom:52px;display:flex;gap:16px;z-index:3}
 .tren .st{background:rgba(10,10,10,.6);border:2px solid #ffb35c;padding:14px 22px;backdrop-filter:blur(4px)}
 .tren .st b{display:block;font:400 56px/1 var(--font-condensed);color:#fff}
@@ -228,9 +228,9 @@
 /* 16 fomo */
 .sV .orb{width:420px;height:420px;right:-80px;bottom:-120px;opacity:.8}
 .sV .mono{position:absolute;left:56px;top:110px;color:var(--violet-soft)}
-.sV .ph2{position:absolute;left:56px;right:56px;top:156px;display:flex;flex-direction:column;gap:16px;z-index:3}
-.sV .ph2 p{font:400 50px/1 var(--font-condensed);text-transform:uppercase;max-width:1060px}
-.sV .ph2 p.last{font-size:88px;color:var(--violet-soft);margin-top:12px}
+.sV .ph2{position:absolute;left:56px;right:56px;top:150px;display:flex;flex-direction:column;gap:14px;z-index:3}
+.sV .ph2 p{font:400 44px/1 var(--font-condensed);text-transform:uppercase;max-width:1100px}
+.sV .ph2 p.last{font-size:80px;color:var(--violet-soft);margin-top:10px}
 /* 17 hacia dónde */
 .sD .half{position:absolute;right:0;top:0;bottom:0;width:440px;z-index:0;margin:0}
 .sD .half img{width:100%;height:100%;object-fit:cover;object-position:40% 25%}
@@ -297,6 +297,9 @@
 .sE .card h3{font-size:58px}
 .sE .op{font:400 84px/1 var(--font-condensed);text-align:center;color:var(--violet)}
 .sE .punch{position:absolute;left:56px;right:56px;bottom:58px;font:400 46px/1 var(--font-condensed);text-transform:uppercase}
+.sV .fomo-bg img{object-position:50% 70%;filter:grayscale(.3)}
+.sV .fomo-bg:after{background:linear-gradient(180deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.82) 55%,rgba(10,10,10,.7) 100%)}
+.sV .mono{z-index:3}
 </style></head><body>
 <div class="stage">
 
@@ -466,7 +469,7 @@
 
 <!-- 13 TREN SOLAR -->
 <section class="slide tren photo-slide" data-title="Hackatón en el Tren Solar">
- <figure class="bleed shade-l"><img src="assets/fotos/tren-solar-abordo.jpg" alt="Builders programando a bordo del Tren Solar durante la hackatón"></figure>
+ <figure class="bleed shade-l"><img src="assets/fotos/tren-vagon.jpg" alt="Builders a bordo del vagón panorámico del Tren Solar durante la hackatón"></figure>
  <img class="logo" src="assets/jujuydev-logo-white.webp" alt="jujuy.dev"><div class="kicker">Lo que hacemos en Jujuy</div>
  <div class="copy">
   <div class="mono">Hackatón Cursor × jujuy.dev · con Argentina Space</div>
@@ -517,8 +520,8 @@
 
 <!-- 16 FOMO -->
 <section class="slide sV dark" data-title="Bienvenidos al FOMO">
+ <figure class="bleed fomo-bg"><img src="assets/fotos/hackaton-mesas.jpg" alt="Equipos programando en la hackatón"></figure>
  <img class="logo" src="assets/jujuydev-logo-white.webp" alt="jujuy.dev" style="filter:none">
- <div class="orb"></div>
  <div class="mono">Bienvenidos al FOMO</div>
  <div class="ph2">
   <p class="step" data-step="1">Cada semana sale algo que cambia cómo se programa.</p>
