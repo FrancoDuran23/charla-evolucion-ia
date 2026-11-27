@@ -261,7 +261,7 @@
 .slide.t-in .handles>*{animation:jd2-rise .5s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(.26s + var(--i,0)*.06s)}
 .slide.t-in .handles>:nth-child(2){--i:1}.slide.t-in .handles>:nth-child(3){--i:2}
 
-/* ── modo SpaceX AI (Grok Bot / GrokBuild) ── */
+/* ── modo SpaceX AI (Grok Bot) ── */
 .slide.sxm{background:#000;color:#f2f2f2}
 .sxm .sx-stars{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.7;background-image:radial-gradient(1px 1px at 8% 12%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 22% 38%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 35% 8%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 48% 26%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 61% 14%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 74% 33%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 87% 9%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 93% 41%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 15% 55%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 56% 47%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 80% 58%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 3% 80%,#fff 50%,transparent 51%)}
 .sxm .sx-earth{position:absolute;left:-15%;right:-15%;top:610px;height:900px;border-radius:50%;z-index:0;pointer-events:none;background:radial-gradient(ellipse at 50% 0%,#0b1630 0%,#000 60%);box-shadow:0 -2px 0 rgba(160,190,255,.55),0 -18px 60px rgba(90,140,255,.35)}
@@ -320,6 +320,12 @@
 .dios .q{top:120px}
 .dios .q h2{font-size:110px}
 .p17 .cta{margin-top:22px;font-size:34px;color:var(--on-ink);text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.sxm .shots{position:absolute;left:56px;right:56px;top:250px;height:330px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;z-index:3}
+.sxm .shots .media{position:relative;height:330px;border-radius:0;border:1px solid rgba(255,255,255,.35);background:#0b0b10;box-shadow:none}
+.sxm .shots .media img{object-fit:cover;object-position:50% 0}
+.sxm .shots .media.missing{border:1px dashed rgba(255,255,255,.45);background:repeating-linear-gradient(45deg,#0b0b10 0 16px,#14141b 16px 32px)}
+.sxm .shots .media.missing .ph b{color:#fff;font:600 18px/1.2 var(--font-sans);letter-spacing:3px}
+.sxm .shots .media.missing .ph small{color:#8d8f99}
 </style></head><body>
 <div class="stage">
 
@@ -460,21 +466,19 @@
  <aside class="notes"><p>¿Cómo llevo todo esto? Con Grok Bot. Tengo más de 40 bots, uno por cada frente de mi vida.</p><p>Un Chief of Staff que recibe los pedidos y los reparte. Uno de jujuy.dev que todos los días busca programas y sponsors: ya van 105 en Notion. Uno para la hackatón del Tren Solar. Uno de video.</p><p>Cada uno tiene su chat, su memoria, sus rutinas y su propia compu con navegador. Y se pasan el trabajo entre ellos.</p></aside>
 </section>
 
-<!-- 12 GROKBUILD (A COMPLETAR) -->
-<section class="slide sK sxm" data-title="GrokBuild: empresas desde cero">
+<!-- GROK BOT: EMPRESA DESDE CERO -->
+<section class="slide sK sxm" data-title="Grok Bot: una empresa desde cero">
  <img class="logo sx-logo" src="assets/logos/spacexai-wordmark.svg" alt="SpaceX AI"><div class="kicker">Builder Ambassador · SpaceX AI</div>
  <div class="sx-stars" aria-hidden="true"></div><div class="sx-earth" aria-hidden="true"></div>
- <div class="head"><div class="bar"></div><h2 class="display">Armar una empresa <span class="hl">desde cero</span></h2>
-  <div class="lead">Con <b>GrokBuild</b>.</div></div>
- <div class="sticker">A completar</div>
- <div class="grid">
-  <div class="card"><div class="n">01</div><h3>Qué es</h3><p>[Franco: qué es GrokBuild en una línea]</p></div>
-  <div class="card"><div class="n">02</div><h3>Cómo arranca</h3><p>[El primer paso para armar una empresa]</p></div>
-  <div class="card"><div class="n">03</div><h3>Qué hacen los agentes</h3><p>[Qué parte del trabajo toman]</p></div>
-  <div class="card"><div class="n">04</div><h3>Un caso real</h3><p>[Una empresa armada así]</p></div>
+ <div class="head"><div class="bar"></div><h2 class="display">Una empresa <span class="hl">desde cero</span></h2>
+  <div class="lead">Con <b>Grok Bot</b>: un team de bots para cada área.</div></div>
+ <div class="shots">
+  <figure class="media step" data-step="1" data-label="Captura de Grok Bot (1)"><img src="assets/capturas/grokbot-teams-1.png" alt="Captura de los teams de Grok Bot"></figure>
+  <figure class="media step" data-step="2" data-label="Captura de Grok Bot (2)"><img src="assets/capturas/grokbot-teams-2.png" alt="Captura de los teams de Grok Bot"></figure>
+  <figure class="media step" data-step="3" data-label="Captura de Grok Bot (3)"><img src="assets/capturas/grokbot-teams-3.png" alt="Captura de los teams de Grok Bot"></figure>
  </div>
- <div class="foot">Slide pendiente: falta el contenido de GrokBuild</div>
- <aside class="notes"><p>[Pendiente: contar qué es GrokBuild y cómo se arma una empresa desde cero con eso, con un caso real.]</p></aside>
+ <div class="foot">Todos los bots, ordenados por <span class="hl">team</span></div>
+ <aside class="notes"><p>Con Grok Bot se puede armar una empresa desde cero: un team de bots para cada área, cada uno con su chat, su memoria y su compu.</p><p>(Acá van las capturas de los teams de Grok Bot con todos los bots.)</p></aside>
 </section>
 
 <!-- 13 TREN SOLAR -->
