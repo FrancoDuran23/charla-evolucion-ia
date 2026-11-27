@@ -219,12 +219,12 @@
 /* 15 jujuy hoy */
 .sJ .head h2{font-size:76px}
 .sJ .head h2{font-size:64px}
-.sJ .strip{position:absolute;left:56px;right:56px;top:204px;height:190px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;z-index:3}
-.sJ .strip .media{position:relative;height:190px;border-radius:12px;border:2px solid var(--ink)}
+.sJ .strip{position:absolute;left:56px;right:56px;top:196px;height:150px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;z-index:3}
+.sJ .strip .media{position:relative;height:150px;border-radius:12px;border:2px solid var(--ink)}
 .sJ .strip .media:nth-child(odd){transform:rotate(-1deg)}.sJ .strip .media:nth-child(even){transform:rotate(1deg)}
-.sJ .grid{position:absolute;left:56px;right:56px;top:410px;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-.sJ .card{min-height:170px;padding:16px 16px}
-.sJ .card h3{font-size:28px;margin:6px 0 6px}
+.sJ .grid{position:absolute;left:56px;right:56px;top:470px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sJ .card{min-height:116px;padding:14px 16px}
+.sJ .card h3{font-size:26px;margin:4px 0 4px}
 .sJ .card p{font-size:17px}
 .sJ .orgs{position:absolute;left:56px;right:56px;bottom:40px;font:600 19px/1.4 var(--font-sans);color:var(--ink-muted)}
 .sJ .orgs b{color:var(--ink)}
@@ -289,10 +289,10 @@
 .sxm .sticker{background:#fff;color:#000;box-shadow:none;font:700 14px/1 var(--font-mono);letter-spacing:3px;padding:10px 14px;transform:none}
 .sxm .head,.sxm .grid,.sxm .gb{z-index:3}
 .sxm.active~.counter{color:#fff;z-index:11}
-.sJ .mission{position:absolute;left:56px;right:56px;bottom:52px;font:400 30px/1.05 var(--font-condensed);text-transform:uppercase;z-index:3}
+.sJ .mission{position:absolute;left:56px;right:56px;bottom:40px;font:400 30px/1.05 var(--font-condensed);text-transform:uppercase;z-index:3}
 .sJ .strip .media .cap{font-size:13px;padding:5px 10px;left:10px;bottom:10px}
-.sJ .strip .media:nth-child(3) img{object-position:50% 55%}
-.sJ .strip .media:nth-child(4) img{object-position:50% 72%}
+.sJ .strip .media:nth-child(3) img{object-position:50% 45%}
+.sJ .strip .media:nth-child(4) img{object-position:50% 60%}
 /* modelo + harness = agente */
 .sE .head h2{font-size:96px}
 .sE .eq{position:absolute;left:56px;right:56px;top:270px;display:grid;grid-template-columns:1fr 64px 1fr 64px 1fr;align-items:center;gap:10px}
@@ -303,6 +303,22 @@
 .sV .fomo-bg img{object-position:50% 70%;filter:grayscale(.3)}
 .sV .fomo-bg:after{background:linear-gradient(180deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.82) 55%,rgba(10,10,10,.7) 100%)}
 .sV .mono{z-index:3}
+.sJ .stats{position:absolute;left:56px;right:56px;top:362px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;z-index:3}
+.sJ .stt{display:flex;align-items:baseline;gap:12px;border-top:3px solid var(--ink);padding-top:8px}
+.sJ .stt b{font:400 64px/1 var(--font-condensed);color:var(--violet);letter-spacing:-1px}
+.sJ .stt span{font:700 16px/1.2 var(--font-sans);max-width:200px}
+.sJ .card p{font-size:16px}
+/* elefante */
+.s08e .head{max-width:52%}
+.s08e .head h2{font-size:84px}
+.s08e .punch{position:absolute;left:56px;bottom:64px;width:520px;font:400 64px/1.05 var(--font-condensed);text-transform:uppercase;z-index:3}
+.s08e .meme{right:48px;top:110px;width:620px;height:520px;border:2px solid var(--ink);box-shadow:12px 12px 0 var(--violet),var(--shadow-tile);z-index:2}
+.s08e .meme img{object-fit:cover;object-position:50% 40%;background:#f4f1ea}
+/* dios atiende en BA */
+.dios .dios-bg img{object-position:50% 75%}
+.dios .dios-bg:after{background:linear-gradient(180deg,rgba(10,10,10,.85) 0%,rgba(10,10,10,.6) 50%,rgba(10,10,10,.35) 100%)}
+.dios .q{top:120px}
+.dios .q h2{font-size:110px}
 </style></head><body>
 <div class="stage">
 
@@ -402,6 +418,15 @@
  <aside class="notes"><p>Mientras tanto, mucha gente pasaba por las 5 etapas del duelo con la IA.</p><p>Negación: “no sirve, escribe código malo”. Ira: posts en contra y gente contando que se quedó sin laburo. Negociación: “la uso solo para autocompletar”. Depresión: this is fine. Y aceptación: de golpe, un post que te daba esperanza.</p></aside>
 </section>
 
+<!-- ELEFANTE -->
+<section class="slide s08e" data-title="Cómo se come un elefante">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">¿Cómo se come<br>un <span class="hl">elefante</span>?</h2></div>
+ <div class="punch step" data-step="1">De a <span class="hl">poquito</span>.</div>
+ <figure class="media meme"><img src="assets/memes/04-comer-elefante.jpg" alt="Persona intentando comer un elefante entero"></figure>
+ <aside class="notes"><p>¿Cómo se come un elefante? De a poquito. Si querés comerte el elefante de un saque, te atragantás.</p><p>Con la IA es igual: no hace falta aprender todo de golpe. Un bocado por vez.</p></aside>
+</section>
+
 <!-- MODELO + HARNESS = AGENTE -->
 <section class="slide sE" data-title="Modelo + harness = agente">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Hoy</div>
@@ -488,18 +513,22 @@
  <div class="strip">
   <figure class="media"><img src="assets/fotos/meetup-minta.jpg" alt="Meetup de jujuy.dev con alguien presentando con micrófono"><span class="tag tag--solid cap">Meetups</span></figure>
   <figure class="media"><img src="assets/fotos/builders-celo-minta.jpg" alt="Builders con laptops en la builder session de Celo × Ripio"><span class="tag tag--solid cap">Builder sessions</span></figure>
-  <figure class="media"><img src="assets/fotos/tren-laptops.jpg" alt="Laptops y builders programando a bordo del Tren Solar"><span class="tag tag--solid cap">A bordo del tren</span></figure>
-  <figure class="media"><img src="assets/fotos/hackaton-mesas.jpg" alt="Equipos programando en mesas largas con mate durante la hackatón"><span class="tag tag--solid cap">Hackatones</span></figure>
+  <figure class="media"><img src="assets/fotos/tren-solar-abordo.jpg" alt="Builders a bordo del Tren Solar durante la hackatón"><span class="tag tag--solid cap">A bordo del tren</span></figure>
+  <figure class="media"><img src="assets/fotos/10-hackaton-sala.jpg" alt="Sala llena de builders programando en una hackatón"><span class="tag tag--solid cap">Hackatones</span></figure>
+ </div>
+ <div class="stats">
+  <div class="stt step" data-step="1"><b>+100</b><span>asistentes al meetup del Cabildo</span></div>
+  <div class="stt step" data-step="1"><b>+700</b><span>personas en el grupo</span></div>
+  <div class="stt step" data-step="1"><b>+1000</b><span>seguidores orgánicos</span></div>
  </div>
  <div class="grid">
-  <div class="card step" data-step="1"><div class="n">01</div><h3>Meetups</h3><p>Para conocernos y <b>aprender juntos</b>.</p></div>
-  <div class="card step" data-step="1"><div class="n">02</div><h3>Builder sessions</h3><p>Con sponsors: <b>Celo × Ripio</b> en MINTA.</p></div>
-  <div class="card step" data-step="2"><div class="n">03</div><h3>Hackatones</h3><p>Pre-Hackatón online y <b>el Tren Solar</b>.</p></div>
-  <div class="card step" data-step="2"><div class="n">04</div><h3>Dev3pack</h3><p>Somos <b>sede local</b>, con Solana.</p></div>
-  <div class="card v step" data-step="3"><div class="n">05</div><h3>Asociación civil</h3><p>jujuy.dev se está <b>formalizando</b>.</p></div>
+  <div class="card step" data-step="2"><div class="n">01</div><h3>Meetups</h3><p>Para conocernos y <b>aprender juntos</b>.</p></div>
+  <div class="card step" data-step="2"><div class="n">02</div><h3>Builder sessions</h3><p>Con sponsors: <b>Celo × Ripio</b> en MINTA.</p></div>
+  <div class="card step" data-step="3"><div class="n">03</div><h3>Hackatones</h3><p>Pre-Hackatón online y <b>el Tren Solar</b>.</p></div>
+  <div class="card v step" data-step="3"><div class="n">04</div><h3>Dev3pack</h3><p>Somos <b>sede local</b>, con Solana.</p></div>
  </div>
  <div class="mission step" data-step="4">Queremos poner a Jujuy como <span class="hl">referente tech</span> en el mapa nacional e internacional</div>
- <aside class="notes"><p>¿Qué hacemos? Meetups, builder sessions con sponsors como Celo y Ripio, hackatones como la Pre-Hackatón online y la del Tren Solar, somos sede local de Dev3pack con Solana, y jujuy.dev se está convirtiendo en asociación civil.</p><p>Y el objetivo es claro: queremos poner a Jujuy como referente tech en el mapa nacional e internacional.</p></aside>
+ <aside class="notes"><p>Algunos números: el meetup que hicimos en el Cabildo tuvo más de 100 asistentes, el grupo ya tiene más de 700 personas y tenemos más de 1000 seguidores orgánicos.</p><p>¿Qué hacemos? Meetups, builder sessions con sponsors como Celo y Ripio, hackatones como la Pre-Hackatón online y la del Tren Solar, somos sede local de Dev3pack con Solana.</p><p>Y el objetivo es claro: queremos poner a Jujuy como referente tech en el mapa nacional e internacional.</p></aside>
 </section>
 
 <!-- 16 FOMO -->
@@ -528,6 +557,18 @@
  </div>
  <div class="punch step" data-step="4">La pregunta ya es <span class="hl">qué vas a construir</span></div>
  <aside class="notes"><p>¿Hacia dónde vamos? Ayer escribíamos cada línea. Hoy le pedimos a un agente que la escriba con nosotros. Mañana vamos a dirigir equipos de agentes que trabajan mientras dormimos.</p><p>Así que la pregunta ya no es cómo programar: es qué vas a construir.</p></aside>
+</section>
+
+<!-- DIOS ATIENDE EN BUENOS AIRES -->
+<section class="slide sQ dios photo-slide dark" data-title="¿Dios solo atiende en Buenos Aires?">
+ <figure class="bleed dios-bg"><img src="assets/fotos/tren-solar-grupo.jpg" alt="Foto grupal de la comunidad en la estación del Tren Solar"></figure>
+ <img class="logo" src="assets/jujuydev-logo-white.webp" alt="jujuy.dev" style="filter:none">
+ <div class="q">
+  <div class="mono">Dicen que…</div>
+  <h2 class="display">¿Dios solo atiende<br>en <span class="hl">Buenos Aires</span>?</h2>
+  <div class="lead step" data-step="1">Desde <b>Jujuy</b> también se construye.</div>
+ </div>
+ <aside class="notes"><p>Dicen que Dios está en todas partes, pero atiende en Buenos Aires. ¿Solo atiende en Buenos Aires?</p><p>Desde Jujuy también se construye. Y lo estamos demostrando.</p></aside>
 </section>
 
 <!-- 18 CIERRE -->
