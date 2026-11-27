@@ -290,6 +290,13 @@
 .sJ .strip .media .cap{font-size:13px;padding:5px 10px;left:10px;bottom:10px}
 .sJ .strip .media:nth-child(3) img{object-position:50% 55%}
 .sJ .strip .media:nth-child(4) img{object-position:50% 72%}
+/* modelo + harness = agente */
+.sE .head h2{font-size:96px}
+.sE .eq{position:absolute;left:56px;right:56px;top:270px;display:grid;grid-template-columns:1fr 64px 1fr 64px 1fr;align-items:center;gap:10px}
+.sE .card{min-height:230px;padding:24px 24px}
+.sE .card h3{font-size:58px}
+.sE .op{font:400 84px/1 var(--font-condensed);text-align:center;color:var(--violet)}
+.sE .punch{position:absolute;left:56px;right:56px;bottom:58px;font:400 46px/1 var(--font-condensed);text-transform:uppercase}
 </style></head><body>
 <div class="stage">
 
@@ -406,6 +413,21 @@
  <div class="fear pop" data-step="2" style="left:812px;top:502px;--r:1.5deg;--d:0.75s"><span class="av"></span><div><p>“¿Para qué estudié programación si ahora lo hace la IA?”</p><span class="ic">♡ &nbsp;💬 &nbsp;↻</span></div></div>
  <figure class="media tif pop" data-step="4"><img src="assets/fotos/09-this-is-fine.jpg" alt="Franco con su laptop en un set de “This is fine”"></figure>
  <aside class="notes"><p>Mientras tanto, mucha gente pasaba por las 5 etapas del duelo con la IA.</p><p>Negación: “no sirve, escribe código malo”. Ira: posts en contra y gente contando que se quedó sin laburo. Negociación: “la uso solo para autocompletar”. Depresión: this is fine. Y aceptación: de golpe, un post que te daba esperanza.</p></aside>
+</section>
+
+<!-- MODELO + HARNESS = AGENTE -->
+<section class="slide sE" data-title="Modelo + harness = agente">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Hoy</div>
+ <div class="head"><div class="bar"></div><h2 class="display">Modelo + <span class="hl">harness</span> = agente</h2></div>
+ <div class="eq">
+  <div class="card step" data-step="1"><div class="n">El cerebro</div><h3>Modelo</h3><p>Entiende y <b>responde texto</b>.</p></div>
+  <div class="op step" data-step="2">+</div>
+  <div class="card step" data-step="2"><div class="n">El arnés</div><h3>Harness</h3><p><b>Herramientas, memoria, permisos</b> y su propia compu.</p></div>
+  <div class="op step" data-step="3">=</div>
+  <div class="card v step" data-step="3"><div class="n">El que trabaja</div><h3>Agente</h3><p>Lee, escribe, corre comandos y <b>hace el trabajo</b>.</p></div>
+ </div>
+ <div class="punch step" data-step="4">Lo que más se usa hoy <span class="hl">son los agentes</span></div>
+ <aside class="notes"><p>Hablemos un poco de modelos. Un modelo solo no hace mucho: entiende y responde texto.</p><p>Lo que lo convierte en agente es el harness, el arnés: le da herramientas (leer archivos, correr comandos, navegar), memoria, permisos y hasta su propia compu.</p><p>Modelo + harness = agente. Y eso es lo que más se usa hoy.</p></aside>
 </section>
 
 <!-- 11 GROK BOT -->
