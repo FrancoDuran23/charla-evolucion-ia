@@ -248,6 +248,35 @@
 .p17 .qr b{display:block;margin-top:10px;font:700 13px/1.3 var(--font-mono);letter-spacing:2px;text-transform:uppercase}
 .slide.t-in .handles>*{animation:jd2-rise .5s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(.26s + var(--i,0)*.06s)}
 .slide.t-in .handles>:nth-child(2){--i:1}.slide.t-in .handles>:nth-child(3){--i:2}
+
+/* ── modo SpaceX AI (Grok Bot / GrokBuild) ── */
+.slide.sxm{background:#000;color:#f2f2f2}
+.sxm .sx-stars{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.7;background-image:radial-gradient(1px 1px at 8% 12%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 22% 38%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 35% 8%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 48% 26%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 61% 14%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 74% 33%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 87% 9%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 93% 41%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 15% 55%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 56% 47%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 80% 58%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 3% 80%,#fff 50%,transparent 51%)}
+.sxm .sx-earth{position:absolute;left:-15%;right:-15%;top:610px;height:900px;border-radius:50%;z-index:0;pointer-events:none;background:radial-gradient(ellipse at 50% 0%,#0b1630 0%,#000 60%);box-shadow:0 -2px 0 rgba(160,190,255,.55),0 -18px 60px rgba(90,140,255,.35)}
+.sxm .logo.sx-logo{height:22px;top:40px;filter:invert(1)}
+.sxm .kicker{color:#9a9aa0;letter-spacing:5px}
+.sxm .bar{background:#fff;height:2px;width:64px}
+.sxm .display{font-family:var(--font-sans);font-weight:600;letter-spacing:6px;line-height:1.05}
+.sxm .head h2{font-size:52px}
+.sxm .hl{color:#fff;font-weight:800}
+.sxm .head .lead{color:#b9bcc6;font-weight:500;font-size:22px;letter-spacing:.3px;margin-top:16px}
+.sxm .head .lead b{color:#fff}
+.sxm .card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.28);border-radius:0;box-shadow:none;backdrop-filter:blur(2px)}
+.sxm .card.v{border:1px solid #fff;box-shadow:none}
+.sxm .card .n{color:#8d8f99;letter-spacing:4px}
+.sxm .card h3{font:600 22px/1.2 var(--font-sans);letter-spacing:3px;text-transform:uppercase;color:#fff;margin:14px 0 10px}
+.sxm .card p{color:#b9bcc6;font-size:17px}
+.sxm .card p b{color:#fff}
+.sxm .gb{background:transparent;border:1px solid rgba(255,255,255,.5);border-radius:0;box-shadow:none}
+.sxm .gb b{font:300 56px/1 var(--font-sans);letter-spacing:2px}
+.sxm .gb small{color:#8d8f99;letter-spacing:3px}
+.sxm .gb img{filter:grayscale(1) brightness(1.4)}
+.sxm .foot{font:600 18px/1.3 var(--font-sans);letter-spacing:4px;text-transform:uppercase;color:#d9dbe1;z-index:3}
+.sxm .foot .hl{color:#fff}
+.sxm.sK .card{background:rgba(255,255,255,.03);border:1px dashed rgba(255,255,255,.35)}
+.sxm .sticker{background:#fff;color:#000;box-shadow:none;font:700 14px/1 var(--font-mono);letter-spacing:3px;padding:10px 14px;transform:none}
+.sxm .head,.sxm .grid,.sxm .gb{z-index:3}
+.sxm.active~.counter{color:#fff;z-index:11}
 </style></head><body>
 <div class="stage">
 
@@ -379,8 +408,9 @@
 </section>
 
 <!-- 11 GROK BOT -->
-<section class="slide sG" data-title="Grok Bot">
- <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Cómo lo llevo</div>
+<section class="slide sG sxm" data-title="Grok Bot">
+ <img class="logo sx-logo" src="assets/logos/spacexai-wordmark.svg" alt="SpaceX AI"><div class="kicker">Builder Ambassador · SpaceX AI</div>
+ <div class="sx-stars" aria-hidden="true"></div><div class="sx-earth" aria-hidden="true"></div>
  <div class="head"><div class="bar"></div><h2 class="display">Un bot por cada <span class="hl">frente</span></h2>
   <div class="lead">Con Grok Bot tengo un equipo de agentes que se pasan el trabajo entre ellos.</div></div>
  <div class="gb"><img src="assets/logos/grokbot.png" alt="Grok Bot"><div><b>+40</b><small>bots en Grok Bot</small></div></div>
@@ -395,8 +425,9 @@
 </section>
 
 <!-- 12 GROKBUILD (A COMPLETAR) -->
-<section class="slide sK" data-title="GrokBuild: empresas desde cero">
- <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Hoy</div>
+<section class="slide sK sxm" data-title="GrokBuild: empresas desde cero">
+ <img class="logo sx-logo" src="assets/logos/spacexai-wordmark.svg" alt="SpaceX AI"><div class="kicker">Builder Ambassador · SpaceX AI</div>
+ <div class="sx-stars" aria-hidden="true"></div><div class="sx-earth" aria-hidden="true"></div>
  <div class="head"><div class="bar"></div><h2 class="display">Armar una empresa <span class="hl">desde cero</span></h2>
   <div class="lead">Con <b>GrokBuild</b>.</div></div>
  <div class="sticker">A completar</div>
