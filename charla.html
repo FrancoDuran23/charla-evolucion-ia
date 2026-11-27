@@ -186,6 +186,30 @@
 @keyframes jd-loop{0%{offset-distance:0%}100%{offset-distance:100%}}
 @keyframes jd-flow{0%{offset-distance:0%;opacity:0}6%{opacity:1}90%{opacity:1}100%{offset-distance:100%;opacity:0}}
 .slide:not(.active) .whip *,.slide:not(.active) .fdot,.slide:not(.active) .ping,.slide:not(.active) .shake,.slide:not(.active) .spin,.slide:not(.active) .redo:before,.slide:not(.active) .redo span{animation-play-state:paused}
+/* 10 */
+.s10 .head h2{font-size:72px}
+.s10 .flow{position:absolute;left:56px;top:214px;width:720px;display:flex;flex-direction:column;gap:14px}
+.s10 .flow .tag{font:700 25px/1.2 var(--font-sans);padding:11px 20px;align-self:flex-start}
+.s10 .flow .tag:nth-child(2){margin-left:40px}.s10 .flow .tag:nth-child(3){margin-left:80px}.s10 .flow .tag:nth-child(4){margin-left:120px}
+.s10 .flow .arr{font:700 18px/1 var(--font-mono);color:var(--violet);padding-left:22px}
+.s10 .from{position:absolute;left:56px;bottom:112px;width:720px;font:400 40px/1 var(--font-condensed);text-transform:uppercase}
+.s10 .end{position:absolute;left:56px;bottom:52px;width:740px}
+.s10 .photo{right:66px;top:196px;width:380px;height:420px;transform:rotate(1.5deg);z-index:2}
+.s10 .sala{left:930px;top:528px;width:300px;height:170px;transform:rotate(-3deg);z-index:3;border:6px solid #fff}
+.s10 .orb{width:220px;height:220px;right:20px;top:150px;z-index:0}
+/* 11 */
+.s11 .q{position:absolute;left:56px;top:120px;width:620px}
+.s11 .q h2{font-size:84px}
+.s11 .a{position:absolute;left:56px;top:390px;width:600px}
+.s11 .a .lead{font-size:34px}
+.s11 .a .big{font:400 92px/.9 var(--font-condensed);text-transform:uppercase;margin-top:8px}
+.s11 .meme{right:56px;top:100px;width:500px;height:560px}
+.s11 .tools{position:absolute;left:700px;right:56px;top:112px;bottom:76px;display:flex;flex-direction:column;justify-content:center;gap:28px}
+.s11 .tl{display:flex;align-items:center;gap:30px;padding:26px 34px;border-radius:18px;background:var(--paper-raised);box-shadow:var(--shadow-tile);border:1.5px solid var(--line-soft)}
+.s11 .tl.orca{border:2px solid var(--violet);box-shadow:10px 10px 0 var(--violet),var(--shadow-tile)}
+.s11 .tl img{width:168px;height:168px;border-radius:30px;display:block;flex:none}
+.s11 .tl b{display:block;font:400 76px/1 var(--font-condensed);text-transform:uppercase}
+.s11 .tl small{display:block;margin-top:8px;font:700 17px/1 var(--font-mono);letter-spacing:1px;color:var(--ink-muted)}
 /* 05 ladder: ajustes */
 .s08 .node:nth-child(2) p small,.s08 .node p small{display:block;font:600 14px/1.2 var(--font-sans);color:var(--ink-muted);white-space:normal}
 /* 07 anécdota */
@@ -381,6 +405,16 @@
 .sxm .shots .media.missing{border:1px dashed rgba(255,255,255,.45);background:repeating-linear-gradient(45deg,#0b0b10 0 16px,#14141b 16px 32px)}
 .sxm .shots .media.missing .ph b{color:#fff;font:600 18px/1.2 var(--font-sans);letter-spacing:3px}
 .sxm .shots .media.missing .ph small{color:#8d8f99}
+/* rol del programador */
+.sR .head h2{font-size:70px}
+.sR .cols{position:absolute;left:56px;right:56px;top:240px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.sR .col .mono{border-top:3px solid var(--ink);padding-top:10px;margin-bottom:6px}
+.sR .col.v .mono{border-color:var(--violet);color:var(--violet)}
+.sR .col.v .it{border-color:#e4dafa}
+.sR .col:not(.v) .it span{color:var(--ink-muted)}
+.sR .it{font-size:30px;padding:16px 0}
+.sR .cols{top:230px}
+.sR .punch{position:absolute;left:56px;right:56px;bottom:56px;font:400 56px/1 var(--font-condensed);text-transform:uppercase}
 </style></head><body>
 <div class="stage">
 
@@ -551,6 +585,35 @@
 </section>
 
 
+<!-- IDE vs ADE -->
+<section class="slide s11" data-title="¿Quién usa un IDE?">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="q"><div class="bar"></div><h2 class="display">¿Quién de ustedes<br>usa un <span class="hl">IDE</span>?</h2></div>
+ <div class="a step" data-step="1"><div class="lead">Bueno… yo uso un</div><div class="big">ADE: <span class="hl">Orca</span></div></div>
+ <div class="tools step" data-step="1"><div class="tl orca"><img src="assets/logos/orca.png" alt="Orca"><span><b>Orca</b><small>onorca.dev</small></span></div><div class="tl"><img src="assets/logos/herdr.png" alt="herdr"><span><b>herdr</b><small>herdr.dev</small></span></div></div>
+ <aside class="notes"><p>¿Quién de ustedes usa un IDE? (manos) Bueno… yo uso un ADE: Orca, un entorno para trabajar con un equipo de agentes.</p><p>La cara de mis compañeros cuando saqué el ADE… me moría de vergüenza. Ese día hablaron muy mal de la gente que usa IA. Sentí que vivía en un mundo de mentira, aunque era quien más PRs hacía y quien más tickets creaba y resolvía.</p></aside>
+</section>
+
+<!-- ROL DEL PROGRAMADOR -->
+<section class="slide sR" data-title="Cómo cambió el rol del programador">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">El nuevo rol</div>
+ <div class="head"><div class="bar"></div><h2 class="display">Cómo cambió el <span class="hl">rol</span> del programador</h2></div>
+ <div class="cols">
+  <div class="col step" data-step="1"><div class="mono">Antes</div><ul class="it-list">
+   <li class="it"><i>01</i><span>Escribía <b>cada línea</b> a mano</span></li>
+   <li class="it"><i>02</i><span>Buscaba la respuesta en <b>Stack Overflow</b></span></li>
+   <li class="it"><i>03</i><span>Era <b>el que ejecuta</b></span></li>
+  </ul></div>
+  <div class="col v step" data-step="2"><div class="mono">Ahora</div><ul class="it-list">
+   <li class="it"><i>01</i><span>Define <b>el problema y el plan</b></span></li>
+   <li class="it"><i>02</i><span>Reparte el trabajo <b>entre agentes</b></span></li>
+   <li class="it"><i>03</i><span><b>Revisa, prueba y decide</b></span></li>
+  </ul></div>
+ </div>
+ <div class="punch step" data-step="3">De escribir código a <span class="hl">dirigir agentes</span></div>
+ <aside class="notes"><p>¿Cómo cambió el rol del programador? Antes escribíamos cada línea a mano, buscábamos la respuesta en Stack Overflow y éramos los que ejecutaban.</p><p>Ahora el trabajo es otro: definir el problema y el plan, repartir el trabajo entre agentes, y revisar, probar y decidir.</p><p>Pasamos de escribir código a dirigir agentes. Lo que importa es el criterio: saber qué construir y si quedó bien.</p></aside>
+</section>
+
 <!-- 11 GROK BOT -->
 <section class="slide sG sxm" data-title="Grok Bot">
  <img class="logo sx-logo" src="assets/logos/spacexai-wordmark.svg" alt="SpaceX AI"><div class="kicker">Builder Ambassador · SpaceX AI</div>
@@ -581,6 +644,23 @@
  </div>
  <div class="foot">Todos los bots, ordenados por <span class="hl">team</span></div>
  <aside class="notes"><p>Con Grok Bot se puede armar una empresa desde cero: un team de bots para cada área, cada uno con su chat, su memoria y su compu.</p><p>Así se ve: un team de agentes siempre encendidos, trabajás con muchos a la vez (cada uno con su área: ventas, soporte, finanzas…) y vuelven con el trabajo terminado.</p></aside>
+</section>
+
+<!-- HACKATONES -->
+<section class="slide s10" data-title="La puerta de entrada: hackatones">
+ <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev">
+ <div class="head"><div class="bar"></div><h2 class="display">¿Por qué las <span class="hl">hackatones</span>?</h2></div>
+ <div class="flow">
+  <span class="tag tag--solid step" data-step="1">🚀 En un finde armás algo real</span>
+  <span class="tag step" data-step="2">↳ 🧠 Aprendés más que en un mes de clase</span>
+  <span class="tag step" data-step="3">↳ 🤝 Conocés gente que también quiere construir</span>
+  <span class="tag tag--violet step" data-step="4">↳ ⚡ Ahí descubrís programar con IA y agentes</span>
+ </div>
+ <div class="from step" data-step="5">No hace falta estar en Buenos Aires. <span class="hl">Desde Jujuy también.</span></div>
+ <div class="orb"></div>
+ <figure class="media photo" data-label="FOTO: Franco en una hackatón"><img src="assets/fotos/10-hackaton.jpg" alt="Franco pitcheando en HackCBA"></figure>
+ <figure class="media sala" data-label="FOTO: sala de HackCBA"><img src="assets/fotos/10-hackaton-sala.jpg" alt="Sala de HackCBA llena de hackers"></figure>
+ <aside class="notes"><p>Las hackatones importan porque en un finde armás algo real, aprendés a mil, conocés gente que también quiere construir, y ahí descubrís programar con IA y agentes.</p><p>No hace falta estar en Buenos Aires: desde Jujuy también.</p></aside>
 </section>
 
 <!-- 13 TREN SOLAR -->
