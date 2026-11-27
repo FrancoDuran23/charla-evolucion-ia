@@ -215,11 +215,15 @@
 .p06 .tl{position:absolute;left:56px;bottom:56px;display:flex;gap:8px}
 /* 15 jujuy hoy */
 .sJ .head h2{font-size:76px}
-.sJ .grid{position:absolute;left:56px;right:56px;top:240px;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-.sJ .card{min-height:250px;padding:20px 18px}
-.sJ .card h3{font-size:32px}
+.sJ .head h2{font-size:64px}
+.sJ .strip{position:absolute;left:56px;right:56px;top:204px;height:190px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;z-index:3}
+.sJ .strip .media{position:relative;height:190px;border-radius:12px;border:2px solid var(--ink)}
+.sJ .strip .media:nth-child(odd){transform:rotate(-1deg)}.sJ .strip .media:nth-child(even){transform:rotate(1deg)}
+.sJ .grid{position:absolute;left:56px;right:56px;top:410px;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.sJ .card{min-height:170px;padding:16px 16px}
+.sJ .card h3{font-size:28px;margin:6px 0 6px}
 .sJ .card p{font-size:17px}
-.sJ .orgs{position:absolute;left:56px;right:56px;bottom:52px;font:600 19px/1.4 var(--font-sans);color:var(--ink-muted)}
+.sJ .orgs{position:absolute;left:56px;right:56px;bottom:40px;font:600 19px/1.4 var(--font-sans);color:var(--ink-muted)}
 .sJ .orgs b{color:var(--ink)}
 /* 16 fomo */
 .sV .orb{width:420px;height:420px;right:-80px;bottom:-120px;opacity:.8}
@@ -228,11 +232,16 @@
 .sV .ph2 p{font:400 50px/1 var(--font-condensed);text-transform:uppercase;max-width:1060px}
 .sV .ph2 p.last{font-size:88px;color:var(--violet-soft);margin-top:12px}
 /* 17 hacia dónde */
-.sD .head h2{font-size:80px}
-.sD .grid{position:absolute;left:56px;right:56px;top:260px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.sD .card{min-height:220px}
-.sD .card h3{font-size:46px}
-.sD .punch{position:absolute;left:56px;right:56px;bottom:56px;font:400 50px/1 var(--font-condensed);text-transform:uppercase}
+.sD .half{position:absolute;right:0;top:0;bottom:0;width:440px;z-index:0;margin:0}
+.sD .half img{width:100%;height:100%;object-fit:cover;object-position:45% 30%}
+.sD .kicker{display:none}
+.sD .head{right:480px}
+.sD .head h2{font-size:76px}
+.sD .grid{position:absolute;left:56px;width:720px;top:250px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.sD .card{min-height:210px;padding:18px 18px}
+.sD .card h3{font-size:40px}
+.sD .card p{font-size:17px}
+.sD .punch{position:absolute;left:56px;width:740px;bottom:56px;font:400 46px/1 var(--font-condensed);text-transform:uppercase}
 /* 18 cierre */
 .p17 .left{position:absolute;left:56px;top:110px;width:760px;z-index:3}
 .p17 h2{font-size:140px;line-height:.9}
@@ -475,6 +484,12 @@
 <section class="slide sJ" data-title="Lo que hacemos en Jujuy">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Lo que hacemos en Jujuy</div>
  <div class="head"><div class="bar"></div><h2 class="display">Desde <span class="hl">Jujuy</span>, para todos</h2></div>
+ <div class="strip">
+  <figure class="media"><img src="assets/fotos/portada.jpg" alt="Comunidad jujuy.dev en un meetup"></figure>
+  <figure class="media"><img src="assets/fotos/comunidad.jpg" alt="Meetup de jujuy.dev"></figure>
+  <figure class="media"><img src="assets/fotos/10-hackaton-sala.jpg" alt="Sala de una hackatón"></figure>
+  <figure class="media"><img src="assets/fotos/tren-solar-grupo.jpg" alt="Foto grupal de la hackatón del Tren Solar"></figure>
+ </div>
  <div class="grid">
   <div class="card step" data-step="1"><div class="n">01</div><h3>Meetups</h3><p>Para conocernos y <b>aprender juntos</b>.</p></div>
   <div class="card step" data-step="1"><div class="n">02</div><h3>Builder sessions</h3><p>Con sponsors: <b>Celo × Ripio</b> en MINTA.</p></div>
@@ -503,6 +518,7 @@
 <!-- 17 HACIA DÓNDE VAMOS -->
 <section class="slide sD" data-title="Hacia dónde vamos">
  <img class="logo" src="assets/jujuydev-logo.webp" alt="jujuy.dev"><div class="kicker">Hacia dónde vamos</div>
+ <figure class="half"><img src="assets/fotos/franco-charla.jpg" alt="Franco Durán dando una charla"></figure>
  <div class="head"><div class="bar"></div><h2 class="display">Hacia dónde <span class="hl">vamos</span></h2></div>
  <div class="grid">
   <div class="card step" data-step="1"><div class="n">Ayer</div><h3>Escribías</h3><p><b>Cada línea</b>, a mano.</p></div>
