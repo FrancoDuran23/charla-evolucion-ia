@@ -1,4 +1,4 @@
-# De Stack Overflow a un equipo de agentes
+# Evolución de la programación en la era de la IA
 
 Charla de Franco Durán (jujuy.dev) sobre la evolución de la programación en la era de la IA.
 
