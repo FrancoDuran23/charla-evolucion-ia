@@ -29,10 +29,12 @@
 .photo-slide .tag{border-color:var(--on-ink)}
 .photo-slide.active~.counter{color:var(--on-ink);text-shadow:0 0 6px #000;z-index:11}
 /* 01 portada */
-.p01 .copy{position:absolute;left:56px;top:140px;width:820px;z-index:3}
-.p01 h1{font-size:112px;line-height:.92}
-.p01 .tags{margin-bottom:26px}
-.p01 .sub{margin-top:26px;font-size:28px}
+.p01 .copy{position:absolute;left:56px;top:96px;width:1100px;z-index:3}
+.p01 h1{font-size:84px;line-height:.92;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.p01 .tags{margin-bottom:18px}
+.p01 .sub{margin-top:16px;font-size:26px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.shade-t:after{background:linear-gradient(180deg,rgba(10,10,10,.82) 0%,rgba(10,10,10,.55) 38%,rgba(10,10,10,0) 62%,rgba(10,10,10,.25) 100%)}
+.p01 .bleed img{object-position:50% 70%}
 .p01 .tag--solid{background:var(--on-ink);color:var(--ink)}
 /* frase oscura */
 .sQ .q{position:absolute;left:56px;right:56px;top:150px;z-index:3}
@@ -244,12 +246,12 @@
 
 <!-- 01 PORTADA -->
 <section class="slide p01 photo-slide" data-title="Portada">
- <figure class="bleed shade-l"><img src="assets/fotos/portada.jpg" alt="Comunidad jujuy.dev en un meetup"></figure>
+ <figure class="bleed shade-t"><img src="assets/fotos/tren-solar-grupo.jpg" alt="Foto grupal de la hackatón en el Tren Solar, frente al cartel de la estación"></figure>
  <img class="logo" src="assets/jujuydev-logo-white.webp" alt="jujuy.dev"><div class="kicker">La programación en la era de la IA</div>
  <div class="copy">
   <div class="tags"><span class="tag"><b>jujuy</b><span class="v" style="color:var(--violet-soft)">.dev</span></span><span class="tag tag--solid">Charla</span></div>
   <div class="bar"></div>
-  <h1 class="display">De Stack Overflow<br>a un equipo<br>de <span class="hl">agentes</span></h1>
+  <h1 class="display">De Stack Overflow a un<br>equipo de <span class="hl">agentes</span></h1>
   <div class="lead sub"><b>Franco Durán</b> · founder de jujuy.dev</div>
  </div>
  <aside class="notes"><p>¡Buenas! Soy Franco Durán. Hoy les quiero contar cómo cambió la forma de programar en muy poco tiempo, y cómo me cambió la vida a mí.</p></aside>
